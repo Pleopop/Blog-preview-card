@@ -5,7 +5,7 @@
 @font-face {
     font-family: 'MyFont';
     src: url('fonts/Figtree-VariableFont_wght.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -26,10 +26,11 @@ body {
 main {
     background-color: white;
     width: 400px;
-    height: 60vh;
+    height: 550px;
     border-radius: 10px;
     box-shadow: 10px 10px black;
     padding: 15px;
+    flex-wrap: nowrap;
 }
 
 .illust-image {
@@ -57,4 +58,36 @@ main {
     background-color: hsl(47, 88%, 63%);;
     margin: 0;
     border-radius: 5px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.content p {
+    font-size: 16px;
+    color: hsl(0, 0%, 42%);
+    margin: 5px 0px;
+    font-weight: normal;
+}
+
+.content h1 {
+    font-size: 30px;
+    font-weight: 800;
+    margin: 15px 0px;
+}
+
+.author {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 15px 0px;
+    font-size: 15px;
+    font-weight: 500px;
+}
+
+.author img {
+    flex: 1 1 10%;
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    margin: 10px;
 }
